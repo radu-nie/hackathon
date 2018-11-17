@@ -1,6 +1,7 @@
+const fileStream = require("fs");
+const csvParse = require("csv-parse");
+
 export class CsvService {
-    fileStream = require("fs");
-    csvParse = require("csv-parse");
     paths = [];
 
     recordsPerYear = [];
@@ -11,29 +12,27 @@ export class CsvService {
         }
     };
 
-    public loadData() {
+    async LoadDataAsync() {
 
         for (var fileCounter = 0; fileCounter < this.paths.length; fileCounter++) {
             let path = this.paths[fileCounter];
-            this.readFromFile(path);
+            let fileRecords = [];
+            let reading = await this.ReadFromFileAsync(path);
+            return reading;
         }
-
     }
 
-    private readFromFile(filePath) {
-        this.fileStream.createReadStream(filePath)
-            .pipe(this.csvParse())
-            .on('data', (data) => {
-                console.log(data);
-                //csvData = data;
-            })
-            .on('end', () => {
-                //console.log(csvData);
-                // [
-                //   { NAME: 'Daffy Duck', AGE: 24 },
-                //   { NAME: 'Bugs Bunny', AGE: 22 }
-                // ]
-            });
-    }
+    private ReadFromFileAsync(filePath) {
 
+        return new Promise(function (resolve, reject) {
+            const fileRecords = [];
+
+            fileStream.createReadStream(filePath)
+                .pipe(csvParse({ delimiter: ';' }))
+                .on('data', fileRecords.push)
+                .on('end', () => {
+                    resolve(fileRecords);
+                });
+        });
+    }
 }

@@ -1,0 +1,20 @@
+export class IndexDetails {
+    ftseIndexCode;
+    indexName;
+    indexValueUSD;
+    indexValueGBP;
+    indexValueEuro;
+    indexValueYen;
+    indexValueLocal;
+    indexTotalReturnUSD;
+    indexTotalReturnGBP;
+    indexTotalReturnEuro;
+    indexTotalReturnYen;
+    indexTotalReturnLocal;
+    indexMarketCapUSD;
+    indexMarketCapBGP;
+    indexMarketCapEuro;
+    indexMarketCapYen;
+    indexMarketCapLocal;
+    dividendYeild;
+}
