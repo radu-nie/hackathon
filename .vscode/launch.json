@@ -7,7 +7,7 @@
     "type": "node",
     "request": "launch",
     "name": "Launch Program",
-    "program": "${workspaceFolder}\\index.js",
+    "program": "${workspaceFolder}\\app.ts",
     "preLaunchTask": "tsc: build - tsconfig.json",
     "outFiles": [
       "${workspaceFolder}/dist/out-tsc/**/*.js"
@@ -16,7 +16,7 @@
     "type": "node",
     "request": "launch",
     "name": "Server debug",
-    "program": "${workspaceFolder}/server\\index.js",
+    "program": "${workspaceRoot}/server\\app.ts",
     "preLaunchTask": "tsc: build - tsconfig.json",
     "outFiles": [
       "${workspaceFolder}/dist/out-tsc/**/*.js"

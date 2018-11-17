@@ -2,10 +2,10 @@
   "name": "hackathon-server",
   "version": "0.0.1",
   "description": "Hackathon",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "test": "test",
-    "start": "node index.js"
+    "start": "node app.ts"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,11 @@
   "homepage": "https://github.com/radu-nie/hackathon#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
   }
 }
