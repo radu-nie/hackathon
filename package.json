@@ -1,6 +1,6 @@
 {
   "name": "hackathon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -52,5 +52,20 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~2.9.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radu-nie/hackathon.git"
+  },
+  "keywords": [
+    "Web"
+  ],
+  "author": "Nie Radu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/radu-nie/hackathon/issues"
+  },
+  "homepage": "https://github.com/radu-nie/hackathon#readme"
 }

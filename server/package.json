@@ -1,0 +1,26 @@
+{
+  "name": "hackathon-server",
+  "version": "0.0.1",
+  "description": "Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radu-nie/hackathon.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Nie Radu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/radu-nie/hackathon/issues"
+  },
+  "homepage": "https://github.com/radu-nie/hackathon#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
