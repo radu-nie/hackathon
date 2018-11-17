@@ -1,16 +1,20 @@
 <app-navbar></app-navbar>
 
+
 <mat-card>
   <mat-card-content>
     <mat-card-title>
-      Line
+      FTSE 100
     </mat-card-title>
     <mat-card-subtitle>
-      somthing
+      Indices > <b>FTSE 100</b>
     </mat-card-subtitle>
     <mat-card-content>
-      <!-- <canvas height="200" baseChart class="chart" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
-        [colors]="lineChartColors" [legend]="lineChartLegend" [chartTyle]="lineChartType"> </canvas> -->
+      <div>
+        <app-indices></app-indices>
+
+        <div [chart]="chart"></div>
+      </div>
     </mat-card-content>
 
   </mat-card-content>

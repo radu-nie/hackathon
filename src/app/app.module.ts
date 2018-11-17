@@ -11,11 +11,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ChartsModule } from 'ng2-charts';
+import { RouterModule, Routes } from '@angular/router';
+import { ChartModule } from 'angular-highcharts';
+import { IndicesComponent } from './components/indices/indices.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    IndicesComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     FormsModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ChartsModule,
+    ChartModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]
